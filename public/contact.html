@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-02</title>
+
+    <!-- ------------------------------google-font-links---------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- ------------------------------font-awesome-links--------------------------------------------- -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- ------------------------------css-links------------------------------------------------------ -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="img11.jpg"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="AboutUs.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <h1>ContactUs</h1>
+    </section>
+
+    <!-- -----------------------contact us page------------------------ -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7443.918854659566!2d79.13074499999999!3d21.114183666666662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sin!4v1646414984054!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>Adarsh Nagar, umred road,Dighori</h5>
+                        <p>Nagpur, Maharashtra, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+91-9307018285</h5>
+                        <p>Monday to Saturday</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>keenkashif13@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="/contact" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn yellow-btn">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ---------------------footer--------------------------- -->
+
+    <section class="footer">
+
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.<br>Tempore doloribus dolores quos blanditiis
+            consequatur optio fuga perferendis eos saepe vitae?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp-square"></i>
+        </div>
+        <p>Made by KASHIF SHEIKH</p>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- -------------JavaScript for Toggle menu-------------- -->
+    <script>
+
+        var navlinks = document.getElementById("navlinks")
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

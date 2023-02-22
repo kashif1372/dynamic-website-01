@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-02</title>
+
+    <!-- ------------------------------google-font-links---------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- ------------------------------font-awesome-links--------------------------------------------- -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- ------------------------------css-links------------------------------------------------------ -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="img11.jpg"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="AboutUs.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+       
+        <h1>Courses</h1>
+    </section>
+
+     <!-- -------------course-------------- -->
+     <section class="course">
+        <h1>Courses we offer</h1>
+        <p>Music is an important part of people's way of life.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Instruments</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eos sed quia officia quaerat ullam
+                    dolorum ipsam, consectetur quas ad provident rem magni sapiente voluptatibus fugiat expedita quidem
+                    accusantium unde reprehenderit laudantium! Tempora, quis!</p>
+            </div>
+            <div class="course-col">
+                <h3>Tones</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eos sed quia officia quaerat ullam
+                    dolorum ipsam, consectetur quas ad provident rem magni sapiente voluptatibus fugiat expedita quidem
+                    accusantium unde reprehenderit laudantium! Tempora, quis!</p>
+            </div>
+            <div class="course-col">
+                <h3>Vocals</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eos sed quia officia quaerat ullam
+                    dolorum ipsam, consectetur quas ad provident rem magni sapiente voluptatibus fugiat expedita quidem
+                    accusantium unde reprehenderit laudantium! Tempora, quis!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------------bands-------------- -->
+    <section class="band">
+        <h1>Best bands for music</h1>
+        <p>Music is an important part of people's way of life.</p>
+
+        <div class="row">
+            <div class="band-col">
+                <img src="img10.jpg">
+                <h3>Steely Dan</h3>
+                <p>Music is an important part of people's way of life.</p>
+            </div>
+            <div class="band-col">
+                <img src="img12.jpg">
+                <h3>Scorpions</h3>
+                <p>Music is an important part of people's way of life.</p>
+            </div>
+            <div class="band-col">
+                <img src="img13.jpg">
+                <h3>Dave Matthews Band</h3>
+                <p>Music is an important part of people's way of life.</p>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+    <!-- ---------------------footer--------------------------- -->
+
+    <section class="footer">
+
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.<br>Tempore doloribus dolores quos blanditiis
+            consequatur optio fuga perferendis eos saepe vitae?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp-square"></i>
+        </div>
+        <p>Made by KASHIF SHEIKH</p>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- -------------JavaScript for Toggle menu-------------- -->
+    <script>
+
+        var navlinks = document.getElementById("navlinks")
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
